@@ -1,0 +1,18 @@
+[package]
+name = "veracrypt"
+version = "0.0.1"
+edition = "2021"
+description = "VeraCrypt in Rust.  VeraCrypt is a trademark of IDRIX."
+repository = "https://github.com/ManyMath/veracrypt-rust"
+license = "MIT"
+
+[[bin]]
+name = "veracrypt"
+path = "src/main.rs"
+
+[lib]
+name = "veracrypt"
+path = "src/lib.rs"
+crate-type = ["cdylib", "staticlib"]
+
+[dependencies]
